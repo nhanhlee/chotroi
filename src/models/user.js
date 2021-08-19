@@ -4,11 +4,11 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
     name : { type : String, default : ""},
     email: { type : String, default: ""},
-    role: { type : String, default: ""},
+    role: { type : String, default: "User"},
     hash: { type : String, default: ""},
     avatar: { type : String, default: ""},
     birth: { type: Date, default: Date.now },
-    sex:  { type : String, default: ""},
+    sex:  { type : String, default: "Male"},
     createdAt :  { type: Date, default: Date.now },
     updateAt: { type: Date, default: Date.now }
 },{collection: 'User'})

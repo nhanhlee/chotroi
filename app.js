@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
-const router = require("./routers/index")
-require('./common/db_connection')
+const router = require("./src/routers/index")
+require('./src/common/db_connection')
 
 app.use('/',router)
 
